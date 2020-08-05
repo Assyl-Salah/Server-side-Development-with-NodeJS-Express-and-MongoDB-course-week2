@@ -20,7 +20,7 @@ leaderRouter.route('/')
 .post((req, res, next) => {
     Leaders.create(req.body)
     .then((leader) => {
-        console.log('leader Created ', promo);
+        console.log('leader Created ', leader);
         res.statusCode = 200;
         res.setHeader('Content-Type', 'application/json');
         res.json(leader);
